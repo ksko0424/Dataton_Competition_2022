@@ -57,7 +57,7 @@
 | LinearSVC | 80.20% |
 | LinearSVC + Bagging | 77.21% |
 
-LinearSVC가 가장 높은 정확도를 보여 최종 모델로 채택했습니다.
+최종 모델은 단순히 validation accuracy만 기준으로 정한 것이 아니라, TF-IDF로 표현된 고차원 sparse text feature에 적합한 선형 결정경계를 만들 수 있고, 학습/추론 비용과 해석 가능성 측면에서도 대회 조건에 적합하다고 판단해 LinearSVC를 중심으로 구성했습니다.
 
 ## 5. Hyperparameter Tuning
 
@@ -74,8 +74,8 @@ LinearSVC의 주요 하이퍼파라미터인 `C` 값을 조정했습니다.
 
 ## 7. Key Takeaways
 
-- MBTI 4개 지표를 독립적으로 예측하는 방식보다 16개 유형을 동시에 예측하는 방식이 본 데이터셋에서 더 좋은 성능을 보였습니다.
-- 텍스트 분류 문제에서는 TF-IDF와 LinearSVC 조합이 강한 baseline으로 동작했습니다.
+- 16개 유형 동시 분류는 MBTI 지표 간 조합 정보를 보존한다는 문제 정의 측면에서 4개 독립 이진 분류보다 더 적합한 구조였습니다.
+- TF-IDF와 LinearSVC 조합은 고차원 sparse text feature를 효율적으로 처리하면서도 재현성과 해석 가능성이 좋은 실용적인 baseline으로 동작했습니다.
 - 클래스 불균형이 존재하므로 정확도뿐 아니라 class-wise metric, macro-F1, confusion matrix 등을 함께 확인하면 모델 해석을 더 강화할 수 있습니다.
 
 ## Related Repository
