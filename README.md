@@ -6,7 +6,7 @@
 - Final code: [`Final_code_team15.ipynb`](./Final_code_team15.ipynb)
 - Award: 최종 정확도 순위 1위, 대상 수상
 
-![image](https://user-images.githubusercontent.com/73769046/156029098-0300bdc0-7508-46af-9b30-fe9548e83e6a.png)
+![Dataton 2022 grand prize](assets/header.png)
 
 ## 1. Problem
 

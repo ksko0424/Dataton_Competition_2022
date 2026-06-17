@@ -1,0 +1,9 @@
+# jupyter / python caches (do not commit)
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# large competition data — see README for source/download
+*.pkl
